@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 4px;
+  color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    font-family: "Muli", sans-serif;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #AAAAAA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    color: #444444;
+}
+
+div.nav-wrapper {
+  display: flex;
+  height: 64px;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+img.background-img {
+  display: flex;
+  position: fixed;
+  width: 105%;
+  margin-left: -2.5%;
+  margin-top: -2.5%;
+  min-height: 67.5vh;
+  height: auto;
+  filter: brightness(25%);
+  z-index: -1;
+}
+
+div.overlay {
+  display: flex;
+  width: 100%;
+  height: 65vh;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+
+div.content-wrapper {
+  display: grid;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-gap: 64px;
+}
+
+div.art-grid {
+  display: grid;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 1fr;
+  grid-row-gap: 100px;
+}
+
+div.art-cell {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+img.art-img {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 800px) {
+
+  div.content-wrapper {
+    display: grid;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-gap: 128px;
+  }
+
+  div.art-grid {
+    display: grid;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5vw;
+    grid-row-gap: 7.5vw;
+  }
+
+}
